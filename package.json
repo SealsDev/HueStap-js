@@ -1,0 +1,24 @@
+{
+  "name": "huestep",
+  "version": "1.0.0",
+  "description": "RGB colors and text gradients for the Node.js terminal.",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.cjs",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "examples", "README.md", "LICENSE"],
+  "scripts": {
+    "example": "node examples/example.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["rgb", "gradient", "ansi", "terminal", "colors"],
+  "license": "MIT"
+}
